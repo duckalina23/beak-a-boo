@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html { 
+  overflow: hidden;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 30px;
+}
