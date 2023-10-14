@@ -1,8 +1,8 @@
 # Beak-a-Boo: A Chrome Extension to Help Students Take Study Breaks
 
-👋Hello! It’s the Narrator here! This is the tale of a little duckling named Duckalina who wanted to learn how to code! 🖥️
+👋Hello! It’s the Narrator here! This is the tale of Duckalina, a first-year CS major at the Georgia Ducks of Duckology! 🖥️
 
-Learn about Duckalina’s backstory (yes, a story!) at: [duckalina23.github.io](https://duckalina23.github.io/)
+Learn about Duckalina’s backstory at: [duckalina23.github.io](https://duckalina23.github.io/)
 
 ## 💁 What is Beak-a-Boo? 
 
