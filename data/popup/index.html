@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Beak-a-Boo Study Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Reenie+Beanie&display=swap" rel="stylesheet">
+</head>
+<body
+  data-tab="timer"
+  data-timer="start"
+  vbox>
+  <header hbox align="center">
+    <h1 for="timer" class="large">Beak-a-Boo Study Timer</h1>
+  </header>
+    <div class="timer" vbox>
+      <br><br><br>
+      <div hbox align="center" pack="center" flex="1" class="extra-large">
+        <table>
+          <thead>
+            <tr>
+              <th>Hours</th>
+              <th>Minutes</th>
+              <th>Seconds</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="number" data-id="hours" min="0" max="99" value="00"></td>
+              <td><input type="number" data-id="minutes" min="0" max="59" value="30"></td>
+              <td><input type="number" data-id="seconds" min="0" max="59" value="00"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br><br>
+      <div data-id="presets">
+        <div hbox>
+          <span data-value="00:05:00">00:05:00</span>
+          <span data-value="00:10:00">00:10:00</span>
+          <span data-value="00:30:00">00:30:00</span>
+          <span data-value="00:45:00">00:45:00</span>
+        </div>
+      </div>
+      <div data-id="tools" class="bulky">
+        <input type="button" value="Start" data-command="start">
+        <input type="button" value="Resume" data-command="resume">
+        <input type="button" value="Pause" data-command="pause">
+        <input type="button" value="Cancel" data-command="cancel">
+      </div>
+    </div>
+  <footer id="tabs" hbox>
+    <input type="radio" name="tab" id="timer">
+    <label for="timer" data-command="puns">Click for a duck pun!</label>
+  </footer>
+  <script type="text/javascript" src="timer.js"></script>
+  <script type="text/javascript" src="ui.js"></script>
+</body>
+</html>

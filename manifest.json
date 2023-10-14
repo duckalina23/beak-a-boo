@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Beak-a-Boo",
+  "description": "A Chrome Extension to Help You Take Study Breaks!",
+  "permissions": [
+    "storage",
+    "alarms",
+    "idle",
+    "contextMenus"
+  ],
+  "offline_enabled": true,
+  "background": {
+    "service_worker": "worker.js"
+  },
+  "icons": {
+    "48": "logo.png"
+  },
+  "action": {
+    "default_popup": "data/popup/index.html"
+  },
+  "commands": {
+    "_execute_action": {},
+    "open-interface": {
+      "description": "Open the interface in a window"
+    }
+  }
+}
