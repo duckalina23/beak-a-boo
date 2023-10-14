@@ -68,14 +68,8 @@ p {
   white-space: pre;
 }
 
-#tools {
-  display: flex;
-  justify-content: end;
-  padding: 10px;
-}
-
 #container {
   height: 100px;
-  width: 200px;
+  width: 100px;
   border: 2px solid blue;
 }
