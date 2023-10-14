@@ -36,3 +36,18 @@ h2 {
 p {
   font-size: 30px;
 }
+
+#lock{
+  color: black;
+  border: 2px solid #ffc767;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  background: white;
+  transition: 0.3s;
+}
+
+#lock:hover {
+  background-color: #ffc767;
+}
