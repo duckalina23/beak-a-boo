@@ -2,7 +2,7 @@ const lock = document.querySelector("#lock");
 const container = document.querySelector('#container');
 
 let tenBreakMinutes = 10;
-
+let breaks = 0;
 lock.addEventListener("click", () => {
   container.requestPointerLock();
   document.getElementById("duckalina").src = "imgs/idle.gif";
@@ -40,4 +40,9 @@ lock.addEventListener("click", () => {
 document.addEventListener("pointerlockchange", () => {
   const locked = document.pointerLockElement;
   lock.disabled = Boolean(locked);
+  if (document.pointerLockElement) {
+    breaks++;
+  } else if (!document.pointerLockElement & breaks>0){
+    window.close();
+  }
 });
