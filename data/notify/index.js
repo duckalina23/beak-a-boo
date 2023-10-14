@@ -1,4 +1,4 @@
-let tenBreakMinutes = 10;
+let tenBreakMinutes = 1;
 
 // This variable is the current time
 let oldDateObj = new Date();
@@ -25,6 +25,6 @@ let x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Break is over!";
+    window.close();
   }
 }, 1000);
