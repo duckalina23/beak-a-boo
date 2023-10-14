@@ -70,7 +70,7 @@ const alarms = {
       }, prefs => {
         let title = 'Misc';
         if (id.startsWith('timer-')) {
-          title = 'Timer';
+          title = 'Time to Take a Break';
         }
         const o = prefs.alarms.filter(a => a.id === id).shift();
         set(id, title, prefs['src-misc'], prefs['repeats-misc'], prefs['volume-misc'], o?.name);
