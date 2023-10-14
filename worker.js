@@ -20,7 +20,7 @@ const notifications = {
     args.set('repeats', opts.repeats);
 
     chrome.storage.local.get({
-      'notify-position': 'center' // center, br, tr
+      'notify-position': 'center'
     }, prefs => {
       args.set('position', prefs['notify-position']);
 
