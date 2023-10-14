@@ -4,14 +4,22 @@
     "description": "A Chrome Extension to Help You Take Study Breaks!",
     "permissions": ["alarms", "commands", "storage", "declarativeContent", "notifications"],  
     "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
     "action": {
         "default_popup": "popup/popup.html"
     },
     "content_scripts": [
         {
-        "matches": ["<all_urls>"],
-        "js": ["content_scripts.js"],
-        "css": ["content_scripts.css"]
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": [ "shovel.png" ],
+          "matches": [ "<all_urls>" ]
         }
     ]
 }
