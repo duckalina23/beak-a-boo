@@ -12,13 +12,14 @@ Beak-a-Boo is a Google Chrome extension that acts as a study break timer. The us
 * A timer that counts down from some user-inputted amount of time
 * A cool, cute duck named Duckalina that will encourage the user to take a 10 minute study/work break
 * Press the ESC key as the study break timer is running to exit out of the break early
-* Duck puns in the menu that will *quack* 😂 you up!
+* Random duck puns in the menu that will *quack* 😂 you up!
 
 ## 🦆 How to Use Beak-A-Boo:
 * Download a ZIP file and extract all files
 * Go to ```chrome://extensions/```, click "Load unpacked", and select the folder with all extracted files 
 * 📑 Bookmark the extension to your browser for easy access!
 * Input an amount of time you plan to study for
+* Randomized duck puns 👅 just for you! 
 * Click on the start timer button ✅ to start the study timer
 * Once the study timer ends, the break notification will appear and when ready, freeze your cursor to begin the break timer
 * If you want to end your 10 minute break early, press [ESC] to exit break tab!
