@@ -44,6 +44,8 @@ p {
   text-decoration: none;
   display: inline-block;
   border-radius: 10px;
+  background: white;
+  transition: 0.3s;
 }
 
 #lock:hover {

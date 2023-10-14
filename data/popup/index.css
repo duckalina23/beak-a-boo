@@ -15,7 +15,7 @@
   --bg-color: #fff;
   --bg-dark-color: #a5bbff;
   --bg-red-color: #ff6984;
-  --bg-green-color: #a4ff88;
+  --bg-green-color: #a4ff88; 
   --font-small: 10px;
   --font-medium: 25px;
   --font-normal: 30px;
@@ -62,14 +62,55 @@ h3 {
   color: var(--color);
 }
 input[type="button"] {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 28px;
+}
+
+input[type="button"]:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+input[type="button"]:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+/*
+input[type="button"] {
   padding: 10px 20px;
   border: none;
   outline: none;
-  border-radius: 20px;
-  color: var(--color);
-  width: 100px;
+  border-radius: 20px; */
+  /*color: var(--color);*/
+ /* width: 100px;
   cursor: pointer;
-}
+} */
 input[type="number"] {
   font-size: var(--font-large);
   color: var(--color);
@@ -401,4 +442,17 @@ body[data-timer="paused"] .timer input[type="button"]:not([data-command="resume"
 }
 .hidden {
   display: none;
+}
+.setMins{
+  color: black;
+  border: 2px solid #555555;
+  border-radius: 8px;
+  padding: 4px 8px;
+  -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
+  transition: background 500ms ease-in-out, color 500ms ease-in-out;
+}
+.setMins:hover {
+  background-color: #555555;
+  color: white;
+  background-position: 100%;
 }
