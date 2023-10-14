@@ -4,7 +4,7 @@
 
 body, html { 
   overflow: hidden;
-  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Solitreo', cursive;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -30,11 +30,11 @@ img {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 16px;
 }
 
 p {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 #lock{

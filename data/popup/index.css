@@ -16,11 +16,11 @@
   --bg-dark-color: #a5bbff;
   --bg-red-color: #ff6984;
   --bg-green-color: #a4ff88; 
-  --font-small: 10px;
-  --font-medium: 25px;
-  --font-normal: 30px;
-  --font-large: 35px;
-  --font-xlarge: 45px;
+  --font-small: 12px;
+  --font-medium: 16px;
+  --font-normal: 24px;
+  --font-large: 30px;
+  --font-xlarge: 36px;
   --width: 400px;
 }
 html.pp {
@@ -44,7 +44,7 @@ html.pp body {
 input,
 body,
 h1 {
-  font-family: 'Reenie Beanie', cursive;
+  font-family: 'Solitreo', cursive;
 }
 body,
 input {
@@ -54,7 +54,7 @@ h1 {
   font-size: var(--font-large);
   font-weight: 300;
   margin: 0;
-  text-align: left;
+  text-align: center;
 }
 h3 {
   margin: 0;
