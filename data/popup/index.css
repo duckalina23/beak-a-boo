@@ -26,7 +26,6 @@
 html.pp {
   --width: 100vw;
 }
-
 body {
   margin: 0;
   color: var(--color);
@@ -91,26 +90,13 @@ input[type="button"] {
   touch-action: manipulation;
   font-size: 28px;
 }
-
 input[type="button"]:hover {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
   transform: translate3d(0, 2px, 0);
 }
-
 input[type="button"]:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
-
-/*
-input[type="button"] {
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 20px; */
-  /*color: var(--color);*/
- /* width: 100px;
-  cursor: pointer;
-} */
 input[type="number"] {
   font-size: var(--font-large);
   color: var(--color);
@@ -142,7 +128,6 @@ body:not([data-tab="alarm"]) header input[type=button] {
 body[data-tab="alarm"][data-alarm="edit"] header input[type=button] {
   display: none;
 }
-
 footer {
   justify-content: space-around;
   padding: 15px 0;
@@ -171,7 +156,6 @@ footer > input[type=radio]:checked + label::before {
   bottom: 0;
   border-bottom: dotted 2px var(--color);
 }
-
 input[type=checkbox].switch {
   margin-left: 10px;
 }
@@ -189,159 +173,18 @@ input[type=checkbox].switch::after {
 input.switch[type=checkbox]:checked::after {
   background-image: url('icons/switch-on.svg');
 }
-
 #content {
   overflow-x: hidden;
 }
 body[data-ready=true] #content {
   transition: margin 200ms;
 }
-
 #content > div {
   min-width: var(--width);
-}
-body[data-tab="alarm"] #content {
-  margin-left: 0;
-}
-body[data-tab="stopwatch"] #content {
-  margin-left: calc(-1 * var(--width));
 }
 body[data-tab="timer"] #content {
   margin-left: calc(-2 * var(--width));
 }
-.alarm input[type=checkbox] {
-  visibility: hidden;
-  width: 28px;
-  height: 28px;
-}
-.alarm div[data-id="toast"] h1,
-.alarm div[data-id="toast"] h3 {
-  text-align: center;
-}
-.alarm div[data-id="toast"] h1 {
-  padding: 0 30px;
-}
-.alarm .entry {
-  background-color: var(--bg-dark-color);
-  padding: 20px 30px;
-  position: relative;
-}
-.alarm .entry [data-id="time"] {
-  flex: 1;
-  font-weight: 300;
-  text-align: left;
-}
-.alarm .entry [data-id="date"].range {
-  color: var(--color);
-}
-.alarm .entry:not(:last-child) {
-  margin-bottom: 10px;
-}
-.alarm .entry[disabled=true] {
-  opacity: 0.5;
-}
-.alarm .entry [data-command="remove"] {
-  width: 16px;
-  height: 16px;
-  background: url(icons/close.svg) center center no-repeat;
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  background-size: 16px;
-  filter: invert(1);
-  padding: 0;
-}
-
-/* alarm settings */
-.alarm div[data-id="edit"] {
-  margin: 0 10px;
-}
-.alarm div[data-id="current"] {
-  padding: 10px 0;
-}
-.alarm div[data-id="days"] {
-  justify-content: space-between;
-}
-.alarm input:not(.switch)[type=checkbox]::after {
-  content: attr(data-id);
-  visibility: visible;
-  color: var(--color);
-  border-radius: 50%;
-  border: solid 1px transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 28px;
-}
-.alarm input:not(.switch)[type=checkbox]:checked::after {
-  color: var(--color);
-  border-color: var(--color);
-}
-.alarm table {
-  width: 100%;
-}
-.alarm [data-id="name"] {
-  color: var(--color);
-  background-color: var(--bg-dark-color);
-  border: none;
-  outline: none;
-  width: 100%;
-  padding: 10px 5px;
-  box-sizing: border-box;
-}
-body[data-alarm="view"] div[data-id="edit"] {
-  display: none;
-}
-.alarm div[data-id="content"] {
-  height: 100%;
-}
-.alarm div[data-id="entries"] {
-  overflow: auto;
-}
-body[data-alarm="edit"] div[data-id="content"] {
-  display: none;
-}
-.alarm .entry {
-  position: relative;
-}
-.alarm .entry [data-id=once] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--bg-green-color);
-  padding: 0 10px;
-}
-.alarm .entry [data-id=once]:empty {
-  display: none;
-}
-
-.stopwatch {
-  flex-direction: column;
-}
-.stopwatch [data-id="content"] {
-  flex: 1;
-  overflow: auto;
-}
-.stopwatch table {
-  width: calc(100% - 40px);
-  text-align: center;
-  table-layout: fixed;
-}
-.stopwatch table td {
-  padding: 2px 0;
-}
-.stopwatch table td:first-child,
-.stopwatch table td:last-child {
-  color: var(--color);
-}
-.stopwatch table td:first-child {
-  text-align: left;
-}
-.stopwatch table td:last-child {
-  text-align: right;
-}
-
 [data-id="tools"] {
   display: flex;
   justify-content: space-around;
@@ -361,15 +204,6 @@ input[type="button"][data-command="cancel"],
 input[type="button"][data-command="reset"],
 input[type="button"][data-command="lap"] {
   background-color: var(--bg-dark-color);
-}
-body[data-stopwatch="start"] .stopwatch input[type="button"]:not([data-command="start"]) {
-  display: none;
-}
-body[data-stopwatch="working"] .stopwatch input[type="button"]:not([data-command="lap"]):not([data-command="stop"]) {
-  display: none;
-}
-body[data-stopwatch="paused"] .stopwatch input[type="button"]:not([data-command="reset"]):not([data-command="resume"]) {
-  display: none;
 }
 .timer {
   flex-direction: column;
@@ -403,7 +237,6 @@ body[data-timer="working"] .timer input[type="button"]:not([data-command="pause"
 body[data-timer="paused"] .timer input[type="button"]:not([data-command="resume"]):not([data-command="cancel"]) {
   display: none;
 }
-
 [hbox] {
   display: flex;
   flex-direction: row;
@@ -443,21 +276,6 @@ body[data-timer="paused"] .timer input[type="button"]:not([data-command="resume"
 .hidden {
   display: none;
 }
-/*
-.setMins{
-  color: black;
-  border: 2px solid #555555;
-  border-radius: 8px;
-  padding: 4px 8px;
-  -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
-  transition: background 500ms ease-in-out, color 500ms ease-in-out;
-}
-.setMins:hover {
-  background-color: #555555;
-  color: white;
-  background-position: 100%;
-}
-*/
 .setMins {
   align-items: center;
   background-color: #FFD0BB;
@@ -496,20 +314,16 @@ body[data-timer="paused"] .timer input[type="button"]:not([data-command="resume"
   transition: transform .2s ease-out;
   z-index: -1;
 }
-
 .setMins:hover:after {
   transform: translate(0, 0);
 }
-
 .setMins:active {
   background-color: #FFD0BB;
   outline: 0;
 }
-
 .setMins:hover {
   outline: 0;
 }
-
 @media (min-width: 768px) {
   .setMins {
     padding: 0 40px;
