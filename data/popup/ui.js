@@ -16,6 +16,11 @@ document.getElementById('tabs').addEventListener('change', e => {
   localStorage.setItem('timer-tab', id);
 });
 
+// random joke function
+let duckJokes = ["Most ducks live in what state? Duckota!","Why do ducks hate reading directions? They prefer to wing it.", "Daddy duck was watching a film called 'Lord Of The Wings'.", "How do ducks propose? With a wedding wing.", "The ducks couldn’t fly to another country, because they didn’t have the proper duck-uments.","What do they say about French ducks? They have a certain je ne sais quack about them.", "The Buddhist duck visited the mo-nest-ry every day."];
+function makeJokes(){
+  alert(duckJokes[Math.floor(Math.random() * duckJokes.length)]);
+}
 // tools
 document.addEventListener('click', e => {
   const {command} = e.target.dataset;
@@ -29,7 +34,7 @@ document.addEventListener('click', e => {
       timer.start();
     }
     else if (command === 'puns') {
-      alert("Most ducks live in what state? Duckota!");
+      makeJokes();
     }
     else if (command) {
       timer[command]();
