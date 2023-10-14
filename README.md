@@ -2,11 +2,11 @@
 
 👋Hello! It’s the Narrator here! This is the tale of a little duckling named Duckalina who wanted to learn how to code! 🖥️
 
-Learn about Duckalina’s *backstory* at: [duckalina23.github.io](duckalina23.github.io)
+Learn about Duckalina’s *backstory* at: [duckalina23.github.io](https://duckalina23.github.io/)
 
 ## 💁 What is Beak-a-Boo? 
 
-Beak-a-Boo is a Google Chrome extension that acts as a study break timer. The user inputs an amount of time they want to study for before taking a break. Once the timer reaches 00:00, a duck will come out of the side of the screen and sleep on the cursor! Users won’t be able to move their cursor for 10 minutes (unless they press the spacebar to end the break timer early). This encourages users to take a break from their screen and get active! 
+Beak-a-Boo is a Google Chrome extension that acts as a study break timer. The user inputs an amount of time they want to study for before taking a break. Once the timer reaches 0 hours 0 minutes 0 seconds, Duckalina will fade into the user's screen and sleep on the cursor! Users won’t be able to move their cursor for 10 minutes (unless they press the spacebar to end the break timer early). This encourages users to take a break from their screen and get active! 
 
 ## ⭐ Beak-a-Boo’s Features:
 * A timer that counts down from some user-inputted amount of time
