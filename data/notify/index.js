@@ -1,4 +1,4 @@
-let tenBreakMinutes = 1;
+let tenBreakMinutes = 10;
 
 // This variable is the current time
 let oldDateObj = new Date();
