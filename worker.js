@@ -79,7 +79,6 @@ const alarms = {
   }
 };
 
-// create or clear
 {
   const cache = {
     create: new Map(),
