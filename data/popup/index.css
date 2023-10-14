@@ -443,6 +443,7 @@ body[data-timer="paused"] .timer input[type="button"]:not([data-command="resume"
 .hidden {
   display: none;
 }
+/*
 .setMins{
   color: black;
   border: 2px solid #555555;
@@ -455,4 +456,62 @@ body[data-timer="paused"] .timer input[type="button"]:not([data-command="resume"
   background-color: #555555;
   color: white;
   background-position: 100%;
+}
+*/
+.setMins {
+  align-items: center;
+  background-color: #FFD0BB;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 20%;
+  padding: 0 4px;
+  margin: 0 8px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.setMins:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -4px;
+  transform: translate(6px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.setMins:hover:after {
+  transform: translate(0, 0);
+}
+
+.setMins:active {
+  background-color: #FFD0BB;
+  outline: 0;
+}
+
+.setMins:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .setMins {
+    padding: 0 40px;
+  }
 }
