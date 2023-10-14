@@ -26,6 +26,7 @@ Beek-a-Boo is a Google Chrome extension that acts as a study break timer. The us
 * 🦆 code and art implementing Duckalina and duck puns
 * ⏰ code implementing the timer
 * ⚒️ code implementing the Chrome extension framework
+* 💄 readme changes
   
 ## 💻 Technologies Used:
 * Visual Studio Code and its LiveShare extension
