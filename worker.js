@@ -42,38 +42,32 @@ const notifications = {
 
 const alarms = {
   fire({name}) {
-    const set = (name, title, sound, repeats, volume, message = `Time's up`) => notifications.clear(name, () => {
+    const set = (name, title, repeats, message = `Time's up`) => notifications.clear(name, () => {
       notifications.create(name, {
         title,
         message: message + '\n\n' + (new Date()).toLocaleString(),
-        sound,
-        volume,
         repeats
       });
     });
     if (name.startsWith('timer-')) {
       chrome.storage.local.get({
-        'src-timer': 'data/sounds/4.mp3',
-        'repeats-timer': 5,
-        'volume-timer': 0.8
+        'repeats-timer': 5
       }, prefs => {
-        set(name, 'Timer', prefs['src-timer'], prefs['repeats-timer'], prefs['volume-timer']);
+        set(name, 'Timer', prefs['repeats-timer']);
       });
     }
     else if (name.startsWith('audio-')) {
       const id = name.replace('audio-', '').split('/')[0];
       chrome.storage.local.get({
         'alarms': [],
-        'src-misc': 'data/sounds/5.mp3',
-        'repeats-misc': 5,
-        'volume-misc': 0.8
+        'repeats-misc': 5
       }, prefs => {
         let title = 'Misc';
         if (id.startsWith('timer-')) {
           title = 'Time to Take a Break';
         }
         const o = prefs.alarms.filter(a => a.id === id).shift();
-        set(id, title, prefs['src-misc'], prefs['repeats-misc'], prefs['volume-misc'], o?.name);
+        set(id, title, prefs['repeats-misc'], o?.name);
       });
     }
   },
