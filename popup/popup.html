@@ -7,19 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beak-a-Boo</title>
 +   <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Reenie+Beanie&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <h1>Beak-a-Boo</h1>
 
-    <input id="userInput" type="number" placeholder="# of minutes to study for"/> 
+    <div class="input">
+        <input id="userInput" type="number" placeholder="# min"/> 
+    </div>
 
     <h2 id ="time">0 minutes</h2>
 
-    <button id="start-timer-btn" onclick="start()">Start</button>
-    <button id="reset-timer-btn" onclick="reset()">Reset</button>
+    <div class="start">
+        <button id="startTimerButton">Start</button>
+    </div>
+    <div class="reset">
+        <button id="resetTimerButton">Reset</button>
+    </div>
+   
+    <script src="popup.js"></script>
 </body>
-
-<script src="popup.js"></script>
 
 </html>

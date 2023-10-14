@@ -1,4 +1,25 @@
-// This variable handles when Duckalina should appear on the screen
+function setAlarm(event) {
+  let minutes = parseFloat(event.target.value);
+  chrome.action.setBadgeText({text: 'ON'});
+  chrome.alarms.create({delayInMinutes: minutes});
+  chrome.storage.sync.set({minutes: minutes});
+  window.close();
+}
+
+function clearAlarm() {
+  chrome.action.setBadgeText({text: ''});
+  chrome.alarms.clearAll();
+  window.close();
+}
+
+//An Alarm delay of less than the minimum 1 minute will fire
+// in approximately 1 minute increments if released
+document.getElementById('sampleMinute').addEventListener('click', setAlarm);
+document.getElementById('min15').addEventListener('click', setAlarm);
+document.getElementById('min30').addEventListener('click', setAlarm);
+document.getElementById('cancelAlarm').addEventListener('click', clearAlarm);
+
+/*// This variable handles when Duckalina should appear on the screen
 let initialWakeUp = false;
 
 // This variable reads how much time the user wants to study for in minutes
@@ -22,11 +43,16 @@ function setCountDownTime() {
 
   // This variable is the time we're counting down to
   countDownDate = new Date(oldDateObj.getTime() + amountOfStudyTime*60000);
+
+  chrome.storage.sync.set({
+    countDownDate: countDownDate
+  })
 }
 
 // This function handles the math of the timer, displaying the countdown, 
 // and changing initialWakeUp
 function updateTimer() {
+  countDownDate = chrome.storage.sync.get(['countDownDate']);
 
   // Get today's date and time
   let now = new Date().getTime();
@@ -62,6 +88,4 @@ function reset() {
 function start() {
   setCountDownTime();
   myInterval = setInterval(updateTimer, 1000);
-}
-
-export{initialWakeUp};
+}*/
