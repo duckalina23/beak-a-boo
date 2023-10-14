@@ -2,7 +2,7 @@
 
 👋Hello! It’s the Narrator here! This is the tale of a little duckling named Duckalina who wanted to learn how to code! 🖥️
 
-Learn about Duckalina’s ~backstory~ at: [duckalina23.github.io](duckalina23.github.io)
+Learn about Duckalina’s *backstory* at: [duckalina23.github.io](duckalina23.github.io)
 
 ## 💁 What is Beek-a-Boo? 
 
@@ -12,7 +12,7 @@ Beek-a-Boo is a Google Chrome extension that acts as a study break timer. The us
 * A timer that counts down from some user-inputted amount of time
 * A cool, cute duck named Duckalina that will encourage the user to take a 10 minute study/work break
 * Press the spacebar as the study break timer is running to end the break early
-* Duck puns in the menu that will quack 😂 you up!
+* Duck puns in the menu that will *quack* 😂 you up!
 
 ## 🦆 How to Use Beek-A-Boo:
 * Install the extension from the Chrome Web Store
